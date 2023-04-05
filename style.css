@@ -1,0 +1,391 @@
+/*General style */
+html{scroll-behavior: smooth;}
+
+body{
+  background-color: #f1f1f1;
+	/*background-color: white;*/
+	text-align:center;
+  font-family: Helvetica;
+  /*padding: 20px;*/
+
+}  
+
+.row{
+  padding: 20px;
+  margin:10px;
+}
+
+
+.container{
+  width: 100%;
+}
+/*.show{
+	background: lightgray;
+	color:black;
+	
+}*/
+
+/* .row{
+	/*display:flex; 
+	justify-content: space-between;
+	align-items: center;
+}*/
+
+
+.navbar_row{
+  background-image: url(Images/PlantCarebackground.jpg);
+  display:flex; 
+	justify-content: space-between;
+	align-items: center;
+  position: sticky;
+  top:0;
+  padding-bottom:0px;
+  z-index:1;
+  justify-content: space-around;
+  margin:0;
+}
+.navbar_items{
+	display:flex;
+	justify-content:space-between;
+	font-size: 110%;
+}
+
+
+
+.nav_ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+  /*background-color:lightgray;*/
+  /*display: inline-block;*/
+}
+
+.nav_li {
+  float: left;
+}
+
+.nav_li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav_li a:hover {
+  /*background-color: #111;*/
+  text-decoration: underline;
+  transform: scale(1.3);
+}
+
+
+.header {
+  padding: 60px;
+  text-align: center;
+  /*background: white;*/
+  color: black;
+  font-size: 30px;
+}
+
+
+/* Slideshow/ Carousel CSS */
+
+
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Shop now button */
+#shop_now_button {
+  background-color: #206040 ;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+
+}
+button{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+
+
+
+/* Photo cards */
+
+/** {
+  box-sizing: border-box;
+}
+/*
+
+/* Center website */
+/*.main {
+  max-width: 1000px;
+  margin: auto;
+}
+/*
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+/*.row {
+  margin: 8px -16px;
+}
+*/
+/* Add padding BETWEEN each column (if you want) */
+/*.row,
+.row > .column {
+  padding: 8px;
+}
+*/
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+/* Content */
+.content {
+  background-color: #f1f1f1;
+  padding: 15px;
+}
+
+.content:hover{
+  text-decoration:wavy;
+  transform: scale(1.1);
+
+}						  
+
+.plant_class_deccription{
+  padding: 30px;
+  margin: 15px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer_and_copy_rights{
+  background-image: url(Images/PlantCarebackground.jpg);
+  color: white;
+}
+
+/* Footer*/
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding-top: 100px;
+  align-items: flex-start;
+}
+
+.footer_section{
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_subsection{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+
+}
+/*
+#useful_links_items{
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+
+}
+*/
+#social_newsletter_email_input_div{
+  margin: 10px;
+  padding: 10px;
+
+}
+
+/* Copy Rights*/
+.copy_rights{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 10px;
+
+}
+
+
+#my-popup{
+	Width: 600px;
+	Height: 400px;
+	Background: #f1f1f1;
+	Box-sizing: border-box; /* for inside padding */
+	Padding: 10px;
+  border-radius: 5px;
+	/* for center */
+	Position: absolute;
+	top:50%;
+	left:50%;
+	Transform: translate(-50%,-50%);
+
+	/* for hider */
+	display:none;
+}
+
+.pop_up_section_1{
+  padding: 10px;
+  margin: 10px;
+
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: #206040;
+  color: white;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-close {
+  position: absolute;
+  top:1%;
+	right:1%;
+  transform: translate(10px, -10px);
+  /*padding: 0.5rem 0.7rem;*/
+  background: #eee;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+	
+.modal input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
