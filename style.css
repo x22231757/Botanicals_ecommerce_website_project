@@ -389,3 +389,64 @@ button {
   z-index: 1;
 }
 
+
+
+/*About us site*/
+
+.about_us_column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.about_us_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.about_us_container {
+  padding: 0 16px;
+}
+
+.about_us_container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about_us_title {
+  color: grey;
+}
+
+.about_us_button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #206040;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+.about_us_button:hover {
+  background-color: #206040;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  .about_us_column {
+    width: 100%;
+    display: block;
+  }
+}
