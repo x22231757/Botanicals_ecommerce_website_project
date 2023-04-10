@@ -339,7 +339,9 @@ h1 {
 	Padding: 10px;
   border-radius: 5px;
 	/* for center */
-	Position: absolute;
+	/*Position: absolute;
+  top:50%;*/
+  position: sticky;
 	top:50%;
 	left:50%;
 	Transform: translate(-50%,-50%);

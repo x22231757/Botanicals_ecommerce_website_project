@@ -41,6 +41,38 @@
 			</div>
 
 		</div>		
+					<!--This will be the start of place for modal pop up window-->
+
+					<div id="my-popup" class="modal">
+						<div class="pop_up_section" id = "section_1" >
+							
+							<button class="btn-close" onclick="ClosePopUp()">X</button>
+							<h1 id = "customer_greeting">Dear Customer!</h1>
+							
+						</div>
+						<div class="pop_up_section" id = "section_2" >
+							<h3>Stay in touch</h3>
+							<p>
+							  Please subscribe to our newsletter and enjoy 10% discount!
+							</p>
+						</div>
+						<div class="pop_up_section"  id = "section_3" >
+						  <input type="email" id="email" placeholder="abcd@gmail.com" />
+						  <button class="btn"  onclick="ValidateEmail(document.getElementById('email'))">Submit</button>
+						</div>
+						<div class="pop_up_section" id = "section_4" style="display: none ;">
+							<h3>Thank you for your subscription!</h3>
+							<div class="pop_up_section">
+								<p id = "thank_you_paragraph">
+									Enjoy your 10% discount which we has been send to 
+								</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="overlay hidden"></div>
+					<!--This will be the end of place for modal pop up window-->
+
         <div class="container">
             <div class="row"> <!--row3-->
                 <div class="col-lg-12">
@@ -223,37 +255,7 @@
 
 			<br>
 			<br>
-			<!--This will be the start of place for modal pop up window-->
 
-			<div id="my-popup" class="modal">
-				<div class="pop_up_section" id = "section_1" >
-					
-					<button class="btn-close" onclick="ClosePopUp()">X</button>
-					<h1 id = "customer_greeting">Dear Customer!</h1>
-					
-				</div>
-				<div class="pop_up_section" id = "section_2" >
-					<h3>Stay in touch</h3>
-					<p>
-					  Please subscribe to our newsletter and enjoy 10% discount!
-					</p>
-				</div>
-				<div class="pop_up_section"  id = "section_3" >
-				  <input type="email" id="email" placeholder="abcd@gmail.com" />
-				  <button class="btn"  onclick="ValidateEmail(document.getElementById('email'))">Submit</button>
-				</div>
-				<div class="pop_up_section" id = "section_4" style="display: none ;">
-					<h3>Thank you for your subscription!</h3>
-					<div class="pop_up_section">
-						<p id = "thank_you_paragraph">
-							Enjoy your 10% discount which we has been send to 
-						</p>
-					</div>
-				</div>
-				
-			</div>
-			<div class="overlay hidden"></div>
-			<!--This will be the end of place for modal pop up window-->
 			
 
         </div>
