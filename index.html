@@ -49,6 +49,13 @@
 					</div>
                 </div>
             </div>
+
+			<div class="row"> <!--row1 Titlecard-->
+				<div class="col-lg-12 page_name_column titlecard">
+					<h1>Home</h1>
+				</div>
+			</div>
+
 			<div class="row"> <!--row4-->
 				<!--row4 Carousel--> 
 
@@ -96,25 +103,15 @@
 
 			</div>
 			<br></br>
-			<button id ="shop_now_button" onclick="window.location.href='https://google.com';">
+			<button class ="shop_now_button" onclick="window.location.href='https://google.com';">
 				Shop Now
 			</button>
 
-
-			
-            <div class="row"> <!--row6-->
-				<div class="col-lg-12 show">
-				    <div class="header" style = "font-family: Helvetica, cursive;">
-						<h1>Our mission:</h1>
-						<p>Botanicals was created out of the necessity of bring nature into homes and offices.We believe that plants make people happy.Our curated houseplants are offered with right sized pots and the perfect soil to keep them lush and healthy. Each plant comes with a plant care guide, making it easier for you to find its perfect spot.</p>
-					</div>
-                </div>
-            </div>
 			
 			<div class="row"> <!--row7 Tiles view example of plants line one or reviews? or instagram photos of customers or other sale items or inspiration for arangataions-->
 				<div class="col-lg-12 show">
-						<div>
-						<h3>Chose your type of plant:</h3>
+						<div class = "subheader"	>
+							<h3>Chose your type of plant:</h3>
 						</div>
 					  <div class="column">
 						<div class="content">
@@ -145,24 +142,80 @@
 					  </div>
 					  <div class="column">
 						<div class="content">
-						  <img src="Images/new_arrivals.jpg" alt="New arrivals plants" style="width:100%">
+						  <img src="Images/new_arrivals.jpg" alt="New-arrival plants" style="width:100%">
 						  <div class ="plant_class_description">
-						  	<h3>New arrivals plants</h3>
+						  	<h3>New-arrival plants</h3>
 						  	<p>For the trendy ones..</p>
 						  </div>
 						</div>
 					  </div>
                 </div>
+
+				
+				<div class="col-lg-12 show"> <!--Stephens Categories-->
+				  <div class="column">
+					<div class="content">
+						<img src="Images/IndoorPlants.jpg" alt="Indoor plants" style="width:100%">
+						<div class ="plant_class_description">
+							<h3>Indoor plants</h3>
+							<p>For the homebodies...</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="column">
+					<div class="content">
+						<img src="Images/OutdoorPlants.jpg" alt="Outdoor plants" style="width:100%">
+						  <div class ="plant_class_description">
+							  <h3>Outdoor plants</h3>
+							  <p>For the outdoorsy ones...</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="column">
+					<div class="content">
+						  <img src="Images/WallPlants.jpg" alt="Wall plants" style="width:100%">
+						  <div class ="plant_class_description">
+							  <h3>Wall plants</h3>
+							  <p>For somebody-to-lean-on...</p>
+						</div>
+					</div>
+				  </div>
+				  <div class="column">
+					<div class="content">
+					  <img src="Images/ChristmasTree.jpg" alt="Christmas trees" style="width:100%">
+					  <div class ="plant_class_description">
+						  <h3>Christmas trees</h3>
+						  <p>For this time of year again...</p>
+					  </div>
+					</div>
+				  </div>
+			</div>
+
+
+
             </div>
+
+
+
 			<br>
 			<br>
 
 			<div class="row"> <!--row7 Tiles view example of plants line one or reviews? or instagram photos of customers or other sale items or inspiration for arangataions-->
-				<div class="col-lg-12 show">
+				<div class="col-lg-12">
 						<div>
-							<h3>Match with your plant: Quiz</h3>
-							<div class="Quiz_image"></div>
-								<img src="Images/quiz_2.jpg" alt="Quiz" style="width:100%">
+							<div class="subheader">
+								<h3>Find your plant match:</h3>
+							</div>
+							<div id = "quiz_card">
+								<div id="quiz_description">
+									<p>Share a little bit out yourself and we will help you to find your perfect plant!<p>
+									<button class ="shop_now_button" onclick="window.location.href='https://www.lovethegarden.com/uk-en/article/whats-your-plant-personality';">
+										Take the quiz
+									</button>
+								</div>
+								<div class="quiz_image"></div>
+									<img src="Images/quiz_2.jpg" alt="Quiz" style="width:100%">
+								</div>
 							</div>
 						</div>
 				</div>
@@ -173,22 +226,29 @@
 			<!--This will be the start of place for modal pop up window-->
 
 			<div id="my-popup" class="modal">
-				<div class="pop_up_section_1">
+				<div class="pop_up_section" id = "section_1" >
 					
 					<button class="btn-close" onclick="ClosePopUp()">X</button>
 					<h1 id = "customer_greeting">Dear Customer!</h1>
 					
 				</div>
-				<div class="pop_up_section_1">
+				<div class="pop_up_section" id = "section_2" >
 					<h3>Stay in touch</h3>
 					<p>
 					  Please subscribe to our newsletter and enjoy 10% discount!
 					</p>
 				</div>
-				
-				<div class="pop_up_section_1" >
+				<div class="pop_up_section"  id = "section_3" >
 				  <input type="email" id="email" placeholder="abcd@gmail.com" />
-				  <button class="btn">Submit</button>
+				  <button class="btn"  onclick="ValidateEmail(document.getElementById('email'))">Submit</button>
+				</div>
+				<div class="pop_up_section" id = "section_4" style="display: none ;">
+					<h3>Thank you for your subscription!</h3>
+					<div class="pop_up_section">
+						<p id = "thank_you_paragraph">
+							Enjoy your 10% discount which we has been send to 
+						</p>
+					</div>
 				</div>
 				
 			</div>

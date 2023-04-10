@@ -90,6 +90,21 @@ body{
 }
 
 
+.page_name_column{
+  justify-content:space-around;
+  text-align:center;
+  margin-top:80px;
+}
+
+.titlecard{
+  background: #206040;   
+  color:white;
+  text-align:center;
+  padding:20px;
+  border-radius:5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* Slideshow/ Carousel CSS */
 
 
@@ -157,7 +172,7 @@ body{
 
 
 /* Shop now button */
-#shop_now_button {
+.shop_now_button {
   background-color: #206040 ;
   border: none;
   color: white;
@@ -166,7 +181,7 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-
+  text-decoration: none;
 }
 button{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -238,10 +253,13 @@ h1 {
 
 }						  
 
-.plant_class_deccription{
-  padding: 30px;
-  margin: 15px;
+.plant_class_description{
+  padding: 10px;
+  margin: 10px;
 }
+
+
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
@@ -330,7 +348,7 @@ h1 {
 	display:none;
 }
 
-.pop_up_section_1{
+.pop_up_section{
   padding: 10px;
   margin: 10px;
 
@@ -444,9 +462,34 @@ button {
   text-decoration: none;
 }
 
+.about_us_card:hover{
+  text-decoration:wavy;
+  transform: scale(1.1);
+
+}		
+
+.subheader{
+  padding: 10px;
+  margin: 10px;
+}
+
 @media screen and (max-width: 650px) {
   .about_us_column {
     width: 100%;
     display: block;
   }
+}
+
+
+#quiz_card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#quiz_description{
+  margin: 10px;
+  padding: 10px;
 }

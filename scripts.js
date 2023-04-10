@@ -39,3 +39,23 @@ function ClosePopUp(){
 }
 
 
+
+function ValidateEmail(email){
+  var emailval = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(email.value.match(emailval)){
+      ThankYouMessage(email)
+      return true;
+  }
+  else{
+      alert("The email address you entered is invalid");
+      document.contactusform.email.focus();
+      return false;
+  }
+}
+
+function ThankYouMessage(email){
+  document.getElementById("section_2").style.display="none";
+  document.getElementById("section_3").style.display="none";
+  document.getElementById("section_4").style.display="block";
+  document.getElementById("thank_you_paragraph").innerHTML += " " + email.value + ".";
+}
