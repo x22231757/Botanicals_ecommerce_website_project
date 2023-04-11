@@ -533,3 +533,23 @@ margin: 30px;
   flex-flow: column;
   justify-content: center;
 }
+
+.info_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+}
+
+.info_column{
+  width: 33.3%;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+}
+
+.plant_class_description{
+  margin: 15px;
+  padding: 15px;
+}
